@@ -42,4 +42,3 @@ jobs:
         curl -v -u ${{ secrets.TOMCAT_USER3 }}:${{ secrets.TOMCAT_PASSWORD3 }} \
         -T target/TrainBook-1.0.0-SNAPSHOT.war \
         "http://${{ secrets.TOMCAT_HOST3 }}/manager/text/deploy?path=/TrainBook-1.0.0-SNAPSHOT.war&update=true"
-
